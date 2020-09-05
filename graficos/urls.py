@@ -42,6 +42,7 @@ from charts.samples import Date_range_event_overlay, Adding_Reference_Line
 from charts.samples import bubble_xy
 from charts.samples import displays_bar
 from charts.samples import spline_data
+from charts.samples import social_network
 
 urlpatterns = [
     url(r'^$', catalogue),
@@ -96,5 +97,6 @@ urlpatterns = [
     url(r'^Adding-Reference-Line', Adding_Reference_Line.chart, name='chart'),
     url(r'^bubble-xy', bubble_xy.chart, name='chart'),
     url(r'^displays-bar', displays_bar.chart, name='chart'),
-    url(r'^spline-data', spline_data.chart, name='chart')
+    url(r'^spline-data', spline_data.chart, name='chart'),
+    url(r'^social-network', social_network.chart, name='chart')
 ]
