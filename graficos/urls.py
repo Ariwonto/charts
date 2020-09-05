@@ -45,7 +45,10 @@ from charts.samples import spline_data
 from charts.samples import social_network
 from charts.samples import audience_location
 from charts.samples import heat_map_most_redeem
-
+from charts.samples import bar_chart_custom_labels
+from charts.samples import spline_area
+from charts.samples import stacked_egative_values, chord_diagram
+from charts.samples import simple_sankey, sunburst_with_multiple_roots
 
 urlpatterns = [
     url(r'^$', catalogue),
@@ -103,5 +106,13 @@ urlpatterns = [
     url(r'^spline-data', spline_data.chart, name='chart'),
     url(r'^social-network', social_network.chart, name='chart'),
     url(r'^audience-location', audience_location.chart, name='chart'),
-    url(r'^heat-map-most-redeem', heat_map_most_redeem.chart, name='chart')
+    url(r'^heat-map-most-redeem', heat_map_most_redeem.chart, name='chart'),
+    url(r'^bar-chart-custom-labels', bar_chart_custom_labels.chart, name='chart'),
+    url(r'^spline-area', spline_area.chart, name='chart'),
+    url(r'^stacked-egative-values', stacked_egative_values.chart, name='chart'),
+    url(r'^simple-sankey', simple_sankey.chart, name='chart'),
+    url(r'^sunburst-with-multiple-roots', sunburst_with_multiple_roots.chart, name='chart'),
+    url(r'^chord-diagram', chord_diagram.chart, name='chart')
+
 ]
+
