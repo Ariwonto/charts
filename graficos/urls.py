@@ -39,6 +39,8 @@ from charts.samples import Different_Plot_Type_Chart, ColumnChart_With_Time_Axis
 from charts.samples import AreaChart_With_Time_Axis, Interactive_candlestick_chart
 from charts.samples import Annotating_single_data_point, Single_Event_Overlay
 from charts.samples import Date_range_event_overlay, Adding_Reference_Line
+from charts.samples import bubble_xy
+from charts.samples import displays_bar
 
 urlpatterns = [
     url(r'^$', catalogue),
@@ -90,5 +92,7 @@ urlpatterns = [
     url(r'^Annotating-single-data-point', Annotating_single_data_point.chart, name='chart'),
     url(r'^Single-Event-Overlay', Single_Event_Overlay.chart, name='chart'),
     url(r'^Date-range-event-overlay', Date_range_event_overlay.chart, name='chart'),
-    url(r'^Adding-Reference-Line', Adding_Reference_Line.chart, name='chart')
+    url(r'^Adding-Reference-Line', Adding_Reference_Line.chart, name='chart'),
+    url(r'^bubble-xy', bubble_xy.chart, name='chart'),
+    url(r'^displays-bar', displays_bar.chart, name='chart')
 ]
