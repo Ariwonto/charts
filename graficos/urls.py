@@ -43,6 +43,9 @@ from charts.samples import bubble_xy
 from charts.samples import displays_bar
 from charts.samples import spline_data
 from charts.samples import social_network
+from charts.samples import audience_location
+from charts.samples import heat_map_most_redeem
+
 
 urlpatterns = [
     url(r'^$', catalogue),
@@ -98,5 +101,7 @@ urlpatterns = [
     url(r'^bubble-xy', bubble_xy.chart, name='chart'),
     url(r'^displays-bar', displays_bar.chart, name='chart'),
     url(r'^spline-data', spline_data.chart, name='chart'),
-    url(r'^social-network', social_network.chart, name='chart')
+    url(r'^social-network', social_network.chart, name='chart'),
+    url(r'^audience-location', audience_location.chart, name='chart'),
+    url(r'^heat-map-most-redeem', heat_map_most_redeem.chart, name='chart')
 ]
