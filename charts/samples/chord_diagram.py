@@ -1,9 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from charts.fusioncharts import FusionCharts
+from django.views.decorators.clickjacking import xframe_options_exempt
 
+
+@xframe_options_exempt
 def chart(request):
-   chartObj = FusionCharts( 'chord', 'ex1', '600', '400', 'chart-1', 'json', """{
+    chartObj = FusionCharts('chord', 'ex1', '600', '400', 'chart-1', 'json', """{
   "chart": {
     "caption": "Migrant flow between different regions",
     "subcaption": "The self links [regionX -> regionX] shows the internal migrations within the areas",
@@ -514,4 +517,4 @@ def chart(request):
     }
   ]
 }""")
-   return render(request, 'index.html', {'output': chartObj.render()})
+    return render(request, 'index.html', {'output': chartObj.render()})
