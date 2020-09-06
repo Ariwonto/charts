@@ -6,7 +6,10 @@ from django.shortcuts import render
 # Include the `fusioncharts.py` file that contains functions to embed the charts.
 from charts.fusioncharts import FusionCharts
 
+from django.views.decorators.clickjacking import xframe_options_exempt
 
+
+@xframe_options_exempt
 # Loading Data from a Ordered Dictionary
 # Example to create a Map with the chart data passed as Dictionary format.
 # The `chart` method is defined to load chart data from Dictionary.

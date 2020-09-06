@@ -7,7 +7,10 @@ from charts.fusioncharts import FusionCharts
 # It is a example to show a Overlapped Bar 2D and column 2d chart where data is passed as JSON string format.
 # These charts are rendering with a common theme.
 # The `chart` method is defined to load chart data from an JSON string.
+from django.views.decorators.clickjacking import xframe_options_exempt
 
+
+@xframe_options_exempt
 def chart(request):
     # Create an object for the overlappedbar2d chart using the FusionCharts class constructor
   overlappedcolumn2d = FusionCharts("overlappedcolumn2d", "ex1" , "600", "400", "chart-1", "json", 

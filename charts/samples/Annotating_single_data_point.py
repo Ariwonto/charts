@@ -5,7 +5,10 @@ from charts.fusioncharts import FusionCharts
 from charts.fusioncharts import FusionTable
 from charts.fusioncharts import TimeSeries
 import requests
+from django.views.decorators.clickjacking import xframe_options_exempt
 
+
+@xframe_options_exempt
 # Loading Data and schema from a Static JSON String url
 # The `chart` method is defined to load chart data from an JSON string.
 
