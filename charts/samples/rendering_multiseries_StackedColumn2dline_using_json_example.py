@@ -2,7 +2,10 @@ from django.shortcuts import render
 
 # Include the `fusioncharts.py` file that contains functions to embed the charts.
 from charts.fusioncharts import FusionCharts
+from django.views.decorators.clickjacking import xframe_options_exempt
 
+
+@xframe_options_exempt
 # The `chart` function is defined to load data from a Python Dictionary. This data will be converted to
 # JSON and the chart will be rendered in the browser.
 

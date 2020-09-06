@@ -2,7 +2,10 @@ from django.shortcuts import render
 
 # Include the `fusioncharts.py` file which has required functions to embed the charts in html page
 from charts.fusioncharts import FusionCharts
+from django.views.decorators.clickjacking import xframe_options_exempt
 
+
+@xframe_options_exempt
 # Loading Data from a Static JSON String
 # It is a example to show a different language other than english using column2d chart where data is passed as JSON string format.
 # The `chart` method is defined to load chart data from an JSON string.
