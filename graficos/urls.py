@@ -67,13 +67,14 @@ from charts.samples import simple_chord_with_blend
 from charts.samples import line_with_multiple_series
 
 urlpatterns = [
-    url(r'^$', catalogue),
+    url(r'^$', panel),
     url(r'^test/', test),
     url(r'^demographic-and-hourly-segmentation/', panel),
     url(r'^geolocation-and-retention-analytics/', panel2),
     url(r'^consumtions-habits-by-categories/', panel3),
     url(r'^product-trends-and-preferences/', panel4),
     url(r'^expenses-and -payment-methods/', panel5),
+
     url(r'^admin/', admin.site.urls),
     url(r'^datahandler', datahandler.getdata),
     url(r'^rendering-angular-gauge-using-dictionary-example', rendering_angular_gauge_using_dictionary_example.chart, name='chart'),
