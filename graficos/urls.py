@@ -17,7 +17,9 @@ from django.conf.urls import url
 from django.contrib import admin
 
 from charts.views import catalogue
-
+from charts.views import panel, panel2, test, panel3, panel4, panel5
+from django.conf import settings
+from django.conf.urls.static import static
 from charts import datahandler
 from charts.samples import rendering_angular_gauge_using_dictionary_example, rendering_column2d_chart_using_dictionary_example
 from charts.samples import rendering_map_using_dictionary_example, rendering_multiseries_column2d_chart_using_json_example
@@ -49,9 +51,29 @@ from charts.samples import bar_chart_custom_labels
 from charts.samples import spline_area
 from charts.samples import stacked_egative_values, chord_diagram
 from charts.samples import simple_sankey, sunburst_with_multiple_roots
+from charts.samples import stacked_columns_and_line
+from charts.samples import sale_of_cigarettes_in_europe
+from charts.samples import scatter_with_multiple_series
+from charts.samples import column_with_error_bars
+from charts.samples import pareto_with_dual_axis
+from charts.samples import sparkline_with_period_indicators
+from charts.samples import chord_with_large_number_of_nodes
+from charts.samples import vertical_sankey_diagram
+from charts.samples import simple_spline_area
+from charts.samples import heat_map_using_variants_of_single_color
+from charts.samples import simple_sunburst
+from charts.samples import heat_map_to_show_scores
+from charts.samples import simple_chord_with_blend
+from charts.samples import line_with_multiple_series
 
 urlpatterns = [
     url(r'^$', catalogue),
+    url(r'^test/', test),
+    url(r'^demographic-and-hourly-segmentation/', panel),
+    url(r'^geolocation-and-retention-analytics/', panel2),
+    url(r'^consumtions-habits-by-categories/', panel3),
+    url(r'^product-trends-and-preferences/', panel4),
+    url(r'^expenses-and -payment-methods/', panel5),
     url(r'^admin/', admin.site.urls),
     url(r'^datahandler', datahandler.getdata),
     url(r'^rendering-angular-gauge-using-dictionary-example', rendering_angular_gauge_using_dictionary_example.chart, name='chart'),
@@ -102,6 +124,7 @@ urlpatterns = [
     url(r'^Date-range-event-overlay', Date_range_event_overlay.chart, name='chart'),
     url(r'^Adding-Reference-Line', Adding_Reference_Line.chart, name='chart'),
     url(r'^bubble-xy', bubble_xy.chart, name='chart'),
+
     url(r'^displays-bar', displays_bar.chart, name='chart'),
     url(r'^spline-data', spline_data.chart, name='chart'),
     url(r'^social-network', social_network.chart, name='chart'),
@@ -112,7 +135,22 @@ urlpatterns = [
     url(r'^stacked-egative-values', stacked_egative_values.chart, name='chart'),
     url(r'^simple-sankey', simple_sankey.chart, name='chart'),
     url(r'^sunburst-with-multiple-roots', sunburst_with_multiple_roots.chart, name='chart'),
-    url(r'^chord-diagram', chord_diagram.chart, name='chart')
+    url(r'^chord-diagram', chord_diagram.chart, name='chart'),
 
-]
+    url(r'^stacked-columns-and-line', stacked_columns_and_line.chart, name='chart'),
+    url(r'^sale-of-cigarettes-in-europe', sale_of_cigarettes_in_europe.chart, name='chart'),
+    url(r'^scatter-with-multiple-series', scatter_with_multiple_series.chart, name='chart'),
+    url(r'^column-with-error-bars', column_with_error_bars.chart, name='chart'),
+    url(r'^pareto-with-dual-axis', pareto_with_dual_axis.chart, name='chart'),
+    url(r'^sparkline-with-period-indicators', sparkline_with_period_indicators.chart, name='chart'),
+    url(r'^chord-with-large-number-of-nodes', chord_with_large_number_of_nodes.chart, name='chart'),
+    url(r'^vertical-sankey-diagram', vertical_sankey_diagram.chart, name='chart'),
+    url(r'^simple-spline-area', simple_spline_area.chart, name='chart'),
+    url(r'^heat-map-using-variants-of-single-color', heat_map_using_variants_of_single_color.chart, name='chart'),
+    url(r'^simple-sunburst', simple_sunburst.chart, name='chart'),
+    url(r'^heat-map-to-show-scores', heat_map_to_show_scores.chart, name='chart'),
+    url(r'^simple-chord-with-blend', simple_chord_with_blend.chart, name='chart'),
+    url(r'^line-with-multiple-series', line_with_multiple_series.chart, name='chart'),
+
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

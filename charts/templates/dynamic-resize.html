@@ -5,13 +5,13 @@
 
 <!-- If you are using downloaded FusionCharts libraries, uncomment the below code   -->
 
-	{% load static %} 
-   	<script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
-   	<script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"></script>	
+{#	{% load static %} #}
+{#   	<script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>#}
+{#   	<script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"></script>	#}
 
 
-{#   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>#}
-{#   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>#}
+   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
 
 </head>
 <body style="font-family:'Helvetica Neue', Arial; font-size: 16px;">
@@ -54,8 +54,6 @@
     <div style="width: 100%; display: block;" align="center">
             <div id="chartContainer" style="border-style: solid;border-color:#5a5a5a;width: 400px; height: 300px;">{{ output|safe }}</div>
     </div>
-    <br/>
-    <br/>
-    <a href="/">Go Back</a>
+
 </body>
 </html>

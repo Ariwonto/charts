@@ -20,17 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12f1c1dd-9243-4fa8-b2a4-d5f91b0bae94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/charts.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/charts/templates/static/panel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charts/samples/chord_with_large_number_of_nodes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charts/samples/column_with_error_bars.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charts/samples/heat_map_to_show_scores.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charts/samples/heat_map_using_variants_of_single_color.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charts/samples/line_with_multiple_series.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charts/samples/pareto_with_dual_axis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charts/samples/sale_of_cigarettes_in_europe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charts/samples/scatter_with_multiple_series.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charts/samples/simple_chord_with_blend.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charts/samples/simple_spline_area.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charts/samples/simple_sunburst.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charts/samples/sparkline_with_period_indicators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charts/samples/stacked_columns_and_line.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charts/samples/vertical_sankey_diagram.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charts/templates/panel-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charts/templates/panel-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charts/templates/panel-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charts/templates/panel-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charts/templates/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charts/samples/Adding_Reference_Line.py" beforeDir="false" afterPath="$PROJECT_DIR$/charts/samples/Adding_Reference_Line.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charts/samples/Annotating_single_data_point.py" beforeDir="false" afterPath="$PROJECT_DIR$/charts/samples/Annotating_single_data_point.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charts/samples/Line_Chart_With_Time_Axis.py" beforeDir="false" afterPath="$PROJECT_DIR$/charts/samples/Line_Chart_With_Time_Axis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charts/templates/catalogue.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/catalogue.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charts/templates/chart-instance-level-api.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/chart-instance-level-api.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charts/templates/chart-product-level-api.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/chart-product-level-api.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charts/templates/chart-theme.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/chart-theme.html" afterDir="false" />
@@ -45,6 +57,9 @@
       <change beforePath="$PROJECT_DIR$/charts/templates/special-chart-type-api.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/special-chart-type-api.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charts/templates/special-event.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/special-event.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charts/templates/update-data-runtime.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/update-data-runtime.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/charts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graficos/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/graficos/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graficos/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/graficos/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +70,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -116,6 +132,9 @@
       <updated>1599333926240</updated>
       <workItem from="1599333927629" duration="416000" />
       <workItem from="1599334347551" duration="7570000" />
+      <workItem from="1599355348879" duration="6000" />
+      <workItem from="1599357717247" duration="19220000" />
+      <workItem from="1599383572110" duration="2483000" />
     </task>
     <servers />
   </component>
@@ -132,11 +151,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="213" y="253" width="1635" height="534" key="find.popup" timestamp="1599341349658">
+    <state x="213" y="253" width="1635" height="534" key="find.popup" timestamp="1599367310181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="213" y="253" width="1635" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599341349658" />
+    <state x="213" y="253" width="1635" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599367310181" />
   </component>
 </project>

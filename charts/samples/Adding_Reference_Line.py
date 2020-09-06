@@ -40,7 +40,7 @@ def chart(request):
                                         }]""")
 
     # Create an object for the chart using the FusionCharts class constructor
-    fcChart = FusionCharts("timeseries", "ex1", 700, 450, "gra-1", "json", timeSeries)
+    fcChart = FusionCharts("timeseries", "ex1", 700, 450, "chart-1", "json", timeSeries)
 
     # returning complete JavaScript and HTML code, which is used to generate chart in the browsers.
-    return render(request, 'catalogue.html', {'output': fcChart.render(), 'chartTitle': "Adding a reference line"})
+    return render(request, 'index.html', {'output': fcChart.render(), 'chartTitle': "Adding a reference line"})

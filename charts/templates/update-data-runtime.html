@@ -6,13 +6,13 @@
 <!-- If you are using downloaded FusionCharts libraries, uncomment the below code   -->
 
 
-	{% load static %} 
-   	<script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
-   	<script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"></script>
+{#	{% load static %} #}
+{#   	<script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>#}
+{#   	<script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"></script>#}
 
 
-{#   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>#}
-{#   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>#}
+   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
     <script>
         updateData = function () {
            var value = document.getElementById("dial-val").value;
@@ -29,7 +29,6 @@
             <input name="dial-val" id="dial-val" type= "number"/>
             <input type ="button" name ="update dial" value ="update dial"onclick ="updateData()" />
 	</div>
-	<br/>
-	<a href="/">Back</a>
+
 </body>
 </html>

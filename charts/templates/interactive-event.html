@@ -6,14 +6,14 @@
 <!-- If you are using downloaded FusionCharts libraries, uncomment the below code   -->
 
 
-	{% load static %} 
-   	<script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
-   	<script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"></script>
+{#	{% load static %} #}
+{#   	<script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>#}
+{#   	<script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"></script>#}
 	
 
 
-{#   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>#}
-{#   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>#}
+   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
     <script>
         function onDataplotClick(eventObj) {
             var dataValue = eventObj.data.dataValue;
@@ -31,7 +31,6 @@
 	<div>
             <p id ="plotclick"></p>
 	</div>
-	<br/>
-	<a href="/">Back</a>
+
 </body>
 </html>
