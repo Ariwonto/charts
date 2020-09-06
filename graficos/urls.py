@@ -65,6 +65,7 @@ from charts.samples import simple_sunburst
 from charts.samples import heat_map_to_show_scores
 from charts.samples import simple_chord_with_blend
 from charts.samples import line_with_multiple_series
+from charts.samples import images_bar
 
 urlpatterns = [
     url(r'^$', catalogue),
@@ -151,6 +152,7 @@ urlpatterns = [
     url(r'^heat-map-to-show-scores', heat_map_to_show_scores.chart, name='chart'),
     url(r'^simple-chord-with-blend', simple_chord_with_blend.chart, name='chart'),
     url(r'^line-with-multiple-series', line_with_multiple_series.chart, name='chart'),
+    url(r'^images-bar', images_bar.chart, name='chart'),
 
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
