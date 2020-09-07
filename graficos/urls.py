@@ -20,6 +20,8 @@ from charts.views import catalogue
 from charts.views import panel, panel2, test, panel3, panel4, panel5
 from django.conf import settings
 from django.conf.urls.static import static
+from django.urls import re_path
+from django.views.static import serve
 from charts import datahandler
 from charts.samples import rendering_angular_gauge_using_dictionary_example, rendering_column2d_chart_using_dictionary_example
 from charts.samples import rendering_map_using_dictionary_example, rendering_multiseries_column2d_chart_using_json_example
@@ -155,6 +157,4 @@ urlpatterns = [
     url(r'^line-with-multiple-series', line_with_multiple_series.chart, name='chart'),
     url(r'^images-bar', images_bar.chart, name='chart'),
 
-]
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
