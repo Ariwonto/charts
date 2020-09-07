@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,19 +7,20 @@
 <!-- If you are using downloaded FusionCharts libraries, uncomment the below code   -->
 
 {#	{% load static %} #}
-{#   	<script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>#}
-{#   	<script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"></script>	#}
+   	<script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
+   	<script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"></script>
 
 
-   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+{#   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>#}
+{#   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>#}
 
 </head>
 <body style="font-family:'Helvetica Neue', Arial; font-size: 16px;">
-	<h3>{{ chartTitle|safe }}</h3>
-    
+	<div align="center">
+        <h3>{{ chartTitle|safe }}</h3>
+
     <script type="text/javascript">
-        
+
         function updateChart(value) {
             var chartData = "";
             switch (value) {
@@ -46,7 +48,7 @@
                                 }]
                             }
                     break;
-            
+
                 case 'NA':
                     chartData = {
                                 "chart": {
@@ -103,7 +105,8 @@
                 <div id="chart-2">{{ output2|safe }}</div>
             </td>
         </tr>
-    </table> 
+    </table>
+    </div>
 
 </body>
 </html>

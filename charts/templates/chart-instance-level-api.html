@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -51,13 +52,13 @@
 
 {##}
 {#	{% load static %} #}
-{#   	<script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>#}
-{#   	<script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"></script>#}
+   	<script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
+   	<script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"></script>
 	
 
 
-   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+{#   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>#}
+{#   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>#}
     <script>
         track = function(){
             FusionCharts.addEventListener("dataplotclick", clickHandler);
@@ -76,9 +77,10 @@
         }
     </script>
 </head>
-<body style="font-family:'Helvetica Neue', Arial; font-size: 16px;">
+<body style="font-family:'Helvetica Neue', Arial; font-size: 16px;" >
 	<h3>{{ chartTitle|safe }}</h3>
-	<div align="center"  id="chart-1">{{ output|safe }}</div>
+	<div align="center">
+        <div align="center"  id="chart-1">{{ output|safe }}</div>
 	<br/>
 	<div>
             <p align="center" id ="message"></p>
@@ -89,7 +91,8 @@
         <label for="radio1">LISTEN TO DATAPLOTCLICK EVENT</label>
         <input type="radio" id="radio2" name="radios"value="false" onClick="reset()">
         <label for="radio2">REMOVE DATAPLOTCLICK EVENT</label>
-        </div> 
+        </div>
+    </div>
 
 
 </body>

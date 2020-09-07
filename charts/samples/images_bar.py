@@ -2,6 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from charts.fusioncharts import FusionCharts
 
+from django.views.decorators.clickjacking import xframe_options_exempt
+
+
+@xframe_options_exempt
 def chart(request):
    chartObj = FusionCharts( 'column2d', 'ex1', '600', '400', 'chart-1', 'json', """{
   "chart": {

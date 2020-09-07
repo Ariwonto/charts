@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,13 +39,13 @@
 
 
 {#	{% load static %} #}
-{#   	<script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>#}
-{#   	<script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"></script>#}
+   	<script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
+   	<script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"></script>
 	
 
 
-   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+{#   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>#}
+{#   <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>#}
     <script>
         changeCaption = function(){
           FusionCharts("ex1").setChartAttribute('caption', 'Test Caption');
@@ -63,7 +64,8 @@
     </script>
 </head>
 <body style="font-family:'Helvetica Neue', Arial; font-size: 16px;">
-	<h3>{{ chartTitle|safe }}</h3>
+	<div align="center">
+        <h3>{{ chartTitle|safe }}</h3>
 	<div align="center"  id="chart-1">{{ output|safe }}</div>
 	<br/>
 	<div>
@@ -75,7 +77,8 @@
                 <input type="button" class="button" onClick="changeXAxisName()" value='Change X-Axis Name: Test X-Axis'/>
                 <input type="button" class="button" onClick="changeYAxisName()" value='Change Y-Axis Name: Test Y-Axis'/>
                 <input type="button" class="button" onClick="reset()" value='Reset'/>
-        </div> 
+        </div>
+    </div>
 
 </body>
 </html>

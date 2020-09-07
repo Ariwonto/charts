@@ -155,5 +155,6 @@ urlpatterns = [
     url(r'^line-with-multiple-series', line_with_multiple_series.chart, name='chart'),
     url(r'^images-bar', images_bar.chart, name='chart'),
 
-]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

@@ -21,12 +21,57 @@
   <component name="ChangeListManager">
     <list default="true" id="12f1c1dd-9243-4fa8-b2a4-d5f91b0bae94" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/samples/images_bar.py" beforeDir="false" afterPath="$PROJECT_DIR$/charts/samples/images_bar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/chart-instance-level-api.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/chart-instance-level-api.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/chart-product-level-api.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/chart-product-level-api.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/chart-theme.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/chart-theme.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/chart-update-onclick.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/chart-update-onclick.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/data-from-scatter-chart.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/data-from-scatter-chart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/dynamic-chart-type.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/dynamic-chart-type.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/dynamic-resize.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/dynamic-resize.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charts/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/interactive-event.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/interactive-event.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/number-format.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/number-format.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charts/templates/panel-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/panel-1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charts/templates/panel-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/panel-2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charts/templates/panel-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/panel-3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charts/templates/panel-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/panel-4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charts/templates/panel-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/panel-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/product-life-cycle-event.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/product-life-cycle-event.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/special-chart-type-api.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/special-chart-type-api.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/special-event.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/special-event.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/data/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/data/data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/data/data.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/fusioncharts.charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/fusioncharts.charts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/fusioncharts.excelexport.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/fusioncharts.excelexport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/fusioncharts.gantt.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/fusioncharts.gantt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/fusioncharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/fusioncharts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/fusioncharts.maps.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/fusioncharts.maps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/fusioncharts.overlappedbar2d.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/fusioncharts.overlappedbar2d.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/fusioncharts.overlappedcolumn2d.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/fusioncharts.overlappedcolumn2d.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/fusioncharts.powercharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/fusioncharts.powercharts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/fusioncharts.timeseries.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/fusioncharts.timeseries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/fusioncharts.treemap.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/fusioncharts.treemap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/fusioncharts.vml.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/fusioncharts.vml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/fusioncharts.widgets.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/fusioncharts.widgets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/fusioncharts.zoomline.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/fusioncharts.zoomline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/fusioncharts.zoomscatter.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/fusioncharts.zoomscatter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/maps/fusioncharts.usa.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/maps/fusioncharts.usa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/maps/fusioncharts.world.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/maps/fusioncharts.world.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/maps/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/maps/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/themes/fusioncharts.theme.candy.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/themes/fusioncharts.theme.candy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/themes/fusioncharts.theme.carbon.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/themes/fusioncharts.theme.carbon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/themes/fusioncharts.theme.fint.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/themes/fusioncharts.theme.fint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/themes/fusioncharts.theme.fusion.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/themes/fusioncharts.theme.fusion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/themes/fusioncharts.theme.gammel.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/themes/fusioncharts.theme.gammel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/themes/fusioncharts.theme.ocean.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/themes/fusioncharts.theme.ocean.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/themes/fusioncharts.theme.umber.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/themes/fusioncharts.theme.umber.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/fusioncharts/themes/fusioncharts.theme.zune.js" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/fusioncharts/themes/fusioncharts.theme.zune.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/static/panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/panel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/topii.png" beforeDir="false" afterPath="$PROJECT_DIR$/charts/static/topii.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/templates/update-data-runtime.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/templates/update-data-runtime.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graficos/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/graficos/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graficos/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/graficos/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +107,12 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\demo\charts\charts" />
+      <recent name="C:\Users\User\Desktop\demo\charts\charts\templates\static" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="charts" type="Python.DjangoServer" factoryName="Django server">
@@ -104,7 +155,8 @@
       <workItem from="1599357717247" duration="19220000" />
       <workItem from="1599383572110" duration="2817000" />
       <workItem from="1599391376415" duration="77000" />
-      <workItem from="1599422913479" duration="7307000" />
+      <workItem from="1599422913479" duration="9402000" />
+      <workItem from="1599436747076" duration="4163000" />
     </task>
     <task id="LOCAL-00001" summary="update demo">
       <created>1599386325637</created>
@@ -113,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599386325637</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="change navbar to sidebar">
+      <created>1599434584796</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599434584796</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,7 +192,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="update demo" />
+    <MESSAGE value="change navbar to sidebar" />
+    <option name="LAST_COMMIT_MESSAGE" value="change navbar to sidebar" />
   </component>
   <component name="WindowStateProjectService">
     <state x="213" y="253" width="1635" height="534" key="find.popup" timestamp="1599367310181">
