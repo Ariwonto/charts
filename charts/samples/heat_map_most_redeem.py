@@ -136,19 +136,19 @@ def chart(request):
     "column": [
       {
         "id": "WI",
-        "label": "Winter"
+        "label": "Tuesday"
       },
       {
         "id": "SU",
-        "label": "Summer"
+        "label": "Wednesday"
       },
       {
         "id": "SP",
-        "label": "Spring"
+        "label": "Thursday"
       },
       {
         "id": "AU",
-        "label": "Autumn"
+        "label": "Friday"
       }
     ]
   },
@@ -156,29 +156,29 @@ def chart(request):
     "row": [
       {
         "id": "NY",
-        "label": "New York"
+        "label": "16:00"
       },
       {
         "id": "LA",
-        "label": "Los Angeles"
+        "label": "17:00"
       },
       {
         "id": "CH",
-        "label": "Chicago"
+        "label": "18:00"
       },
       {
         "id": "HO",
-        "label": "Houston"
+        "label": "19:00"
       }
     ]
   },
   "chart": {
     "theme": "fusion",
-    "caption": "Average temperature for Top 4 US Cities",
-    "subcaption": " Across all seasons (2016-17)",
+    "caption": "Time of the day of most activities",
+    "subcaption": "Pepitos Pizza",
     "showvalues": "1",
     "mapbycategory": "1",
-    "plottooltext": "$rowlabel's average temperature in $columnlabel is $displayvalue °F"
+    "plottooltext": "$rowlabel's average visitor on the day $columnlabel is $displayvalue"
   }
 }""")
    return render(request, 'index.html', {'output': chartObj.render()})

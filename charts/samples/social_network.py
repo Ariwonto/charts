@@ -8,12 +8,12 @@ from django.views.decorators.clickjacking import xframe_options_exempt
 def chart(request):
    chartObj = FusionCharts( 'mscolumn2d', 'ex1', '600', '400', 'chart-1', 'json', """{
   "chart": {
-    "caption": "App Publishing Trend",
-    "subcaption": "2012-2016",
-    "xaxisname": "Years",
-    "yaxisname": "Total number of apps in store",
+    "caption": "Promo Share",
+    "subcaption": "Pepitos Pizza",
+    "xaxisname": "Months",
+    "yaxisname": "Total Promos Share",
     "formatnumberscale": "1",
-    "plottooltext": "<b>$dataValue</b> apps were available on <b>$seriesName</b> in $label",
+    "plottooltext": "<b>$dataValue</b> shared promos on <b>$seriesName</b> in $label",
     "theme": "fusion",
     "drawcrossline": "1"
   },
@@ -21,26 +21,26 @@ def chart(request):
     {
       "category": [
         {
-          "label": "2012"
+          "label": "Jan"
         },
         {
-          "label": "2013"
+          "label": "Feb"
         },
         {
-          "label": "2014"
+          "label": "Mar"
         },
         {
-          "label": "2015"
+          "label": "Apr"
         },
         {
-          "label": "2016"
+          "label": "May"
         }
       ]
     }
   ],
   "dataset": [
     {
-      "seriesname": "iOS App Store",
+      "seriesname": "Instagram",
       "data": [
         {
           "value": "125000"
@@ -60,7 +60,7 @@ def chart(request):
       ]
     },
     {
-      "seriesname": "Google Play Store",
+      "seriesname": "Facebook",
       "data": [
         {
           "value": "70000"
@@ -80,7 +80,7 @@ def chart(request):
       ]
     },
     {
-      "seriesname": "Amazon AppStore",
+      "seriesname": "Twitter",
       "data": [
         {
           "value": "10000"

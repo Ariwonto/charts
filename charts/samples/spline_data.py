@@ -8,14 +8,14 @@ from django.views.decorators.clickjacking import xframe_options_exempt
 def chart(request):
    chartObj = FusionCharts( 'msspline', 'ex1', '600', '400', 'chart-1', 'json', """{
   "chart": {
-    "caption": "Support Tickets : Received vs Resolved",
-    "yaxisname": "# of Tickets",
+    "caption": "Promos : Viewed vs Saved",
+    "yaxisname": "# of Promos",
     "subcaption": "Last week",
     "numdivlines": "3",
     "showvalues": "0",
     "legenditemfontsize": "15",
     "legenditemfontbold": "1",
-    "plottooltext": "<b>$dataValue</b> Tickets $seriesName on $label",
+    "plottooltext": "<b>$dataValue</b> Promos $seriesName on $label",
     "theme": "fusion"
   },
   "categories": [
@@ -47,7 +47,7 @@ def chart(request):
   ],
   "dataset": [
     {
-      "seriesname": "Received",
+      "seriesname": "Viewed",
       "data": [
         {
           "value": "55"
@@ -73,7 +73,7 @@ def chart(request):
       ]
     },
     {
-      "seriesname": "Resolved",
+      "seriesname": "Saved",
       "data": [
         {
           "value": "50"

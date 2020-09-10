@@ -33,7 +33,7 @@ def chart(request):
             "x": "$dataset.0.set.0.X-45",
             "y": "$canvasEndY-195",
             "xscale": "29",
-            "yscale": "38"
+            "yscale": "29"
           },
           {
             "id": "redbull",
@@ -69,7 +69,7 @@ def chart(request):
   "data": [
     {
       "label": "Coke",
-      "value": "6900000000"
+      "value": "2900000000"
     },
     {
       "label": "Red Bull",
