@@ -19,19 +19,19 @@ def chart(request):
     {
       "category": [
         {
-          "label": "Todos los Jueves 2x1"
+          "label": "Every Thursday 2x1"
         },
         {
-          "label": "Peperoni Lovers"
+          "label": "Pepperoni Lovers"
         },
         {
-          "label": "La siguiente Pizza 1Euro"
+          "label": "The next Pizza 1Euro"
         },
         {
-          "label": "Pizza Familiar + Postre"
+          "label": "Family Pizza + Dessert"
         },
         {
-          "label": "Lunes + Pizza = Felicidad"
+          "label": "Monday + Pizza = Happiness"
         },
         {
           "label": "Carnivoras 3x1"
@@ -43,22 +43,22 @@ def chart(request):
     {
       "data": [
         {
-          "value": "97294205"
+          "value": "972"
         },
         {
-          "value": "95482197"
+          "value": "9548"
         },
         {
-          "value": "60224172"
+          "value": "602"
         },
         {
-          "value": "33018247"
+          "value": "3301"
         },
         {
-          "value": "31615028"
+          "value": "3161"
         },
         {
-          "value": "28984878"
+          "value": "2884"
         }
       ]
     }

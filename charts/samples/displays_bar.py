@@ -17,23 +17,23 @@ def chart(request):
   "data": [
     {
       "label": "TOPii Mobile",
-      "value": "1466000"
+      "value": "14660"
     },
     {
       "label": "TOPii Web",
-      "value": "1147800"
+      "value": "11478"
     },
     {
       "label": "Facebook",
-      "value": "532200"
+      "value": "5322"
     },
     {
       "label": "Instagram",
-      "value": "395000"
+      "value": "3950"
     },
     {
       "label": "Organic Web",
-      "value": "250200"
+      "value": "2502"
     }
 
   ]

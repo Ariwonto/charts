@@ -69,6 +69,7 @@ from charts.samples import simple_chord_with_blend
 from charts.samples import line_with_multiple_series
 from charts.samples import images_bar
 from charts.samples import burbujas
+from charts.samples import radar
 urlpatterns = [
     url(r'^$', panel),
     url(r'^test/', test),
@@ -157,5 +158,6 @@ urlpatterns = [
     url(r'^line-with-multiple-series', line_with_multiple_series.chart, name='chart'),
     url(r'^images-bar', images_bar.chart, name='chart'),
     url(r'^burbujas', burbujas.chart, name='chart'),
+    url(r'^radar', radar.chart, name='chart'),
 
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

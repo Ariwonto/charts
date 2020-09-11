@@ -43,19 +43,19 @@ def chart(request):
       "seriesname": "Instagram",
       "data": [
         {
-          "value": "125000"
+          "value": "12500"
         },
         {
-          "value": "300000"
+          "value": "3000"
         },
         {
-          "value": "480000"
+          "value": "4800"
         },
         {
-          "value": "800000"
+          "value": "8000"
         },
         {
-          "value": "1100000"
+          "value": "11000"
         }
       ]
     },
@@ -63,19 +63,19 @@ def chart(request):
       "seriesname": "Facebook",
       "data": [
         {
-          "value": "70000"
+          "value": "7000"
         },
         {
-          "value": "150000"
+          "value": "1500"
         },
         {
-          "value": "350000"
+          "value": "3500"
         },
         {
-          "value": "600000"
+          "value": "6000"
         },
         {
-          "value": "1400000"
+          "value": "14000"
         }
       ]
     },
@@ -83,19 +83,19 @@ def chart(request):
       "seriesname": "Twitter",
       "data": [
         {
-          "value": "10000"
+          "value": "1000"
         },
         {
-          "value": "100000"
+          "value": "4502"
         },
         {
-          "value": "300000"
+          "value": "2390"
         },
         {
-          "value": "600000"
+          "value": "23500"
         },
         {
-          "value": "900000"
+          "value": "29000"
         }
       ]
     }
