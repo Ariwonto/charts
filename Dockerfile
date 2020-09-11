@@ -21,8 +21,8 @@ ADD requirements.txt /app/requirements.txt
 ADD . /app
 RUN /env/bin/pip install --upgrade pip && /env/bin/pip install -r /app/requirements.txt && \
     /env/bin/python /app/manage.py makemigrations && /env/bin/python /app/manage.py migrate \
-    && /env/bin/python /app/manage.py collectstatic --noinput \
-   
+    && /env/bin/python /app/manage.py collectstatic --noinput
+
 
 
 WORKDIR /app
