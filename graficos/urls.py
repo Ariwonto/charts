@@ -68,7 +68,7 @@ from charts.samples import heat_map_to_show_scores
 from charts.samples import simple_chord_with_blend
 from charts.samples import line_with_multiple_series
 from charts.samples import images_bar
-
+from charts.samples import burbujas
 urlpatterns = [
     url(r'^$', panel),
     url(r'^test/', test),
@@ -156,5 +156,6 @@ urlpatterns = [
     url(r'^simple-chord-with-blend', simple_chord_with_blend.chart, name='chart'),
     url(r'^line-with-multiple-series', line_with_multiple_series.chart, name='chart'),
     url(r'^images-bar', images_bar.chart, name='chart'),
+    url(r'^burbujas', burbujas.chart, name='chart'),
 
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

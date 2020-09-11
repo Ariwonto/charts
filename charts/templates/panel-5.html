@@ -15,6 +15,145 @@
   </head>
   <body>
 
+  <div   class="page-wrapper chiller-theme toggled">
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul style="margin-left: 250px"  class="navbar-nav">
+
+    <div class="dropdown">
+      <button onmouseover="myFunction()" class="dropbtn">Bussines</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#home"><img  style="height:34px; width:34px" src="{% static 'kfc.png' %}"  class="img-circle" alt="User Image">&nbsp;  KFC</a>
+        <a href="#about"><img  style="height:34px; width:34px" src="{% static 'pardos.jpg' %}"  class="img-circle" alt="User Image"> &nbsp; Pardos</a>
+        <a href="#contact"> <img  style="height:34px; width:34px" src="{% static 'pizza.png' %}"  class="img-circle" alt="User Image"> &nbsp; Pizza </a>
+        <a href="#about"><img  style="height:34px; width:34px" src="{% static 'starbuck.png' %}"  class="img-circle" alt="User Image"> &nbsp; Starbucks</a>
+        <a href="#contact"><img  style="height:34px; width:34px" src="{% static 'COLA.png' %}"  class="img-circle" alt="User Image">&nbsp; Coca-Cola</a>
+      </div>
+    </div>
+    &nbsp; &nbsp;
+    <div   class="dropdown">
+      <button onmouseover="myFunction2()" class="dropbtn">Promos</button>
+      <div id="myDropdown2" class="dropdown-content2">
+        <a href="#home"> <img  style="height:40px; width:40px" src="{% static 'pardos.jpg' %}"  class="img-circle" alt="User Image">
+            $18- Peruvian Meal Box from Baby Brasa in West Village</a>
+        <a href="#about"><img  style="height:40px; width:40px" src="{% static 'pardos.jpg' %}"  class="img-circle" alt="User Image">
+            $18- Peruvian Meal Box from Baby Brasa in East Village</a>
+        <a href="#contact"><img  style="height:40px; width:40px" src="{% static 'pardos.jpg' %}"  class="img-circle" alt="User Image">
+            $18- Peruvian Meal Box from Baby Brasa in North Village</a>
+        <a href="#about"> <img  style="height:34px; width:34px" src="{% static 'pardos.jpg' %}"  class="img-circle" alt="User Image">
+            $18- Peruvian Meal Box from Baby Brasa in South Village</a>
+      </div>
+    </div>
+            <form class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-navbar" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    </ul>
+
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Nora Silvester
+                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+        <li>
+            <div class="image">
+              <img  style="height:34px; width:34px" src="{% static 'Perfil.jpg' %}"  class="img-circle" alt="User Image">
+            </div>
+        </li>
+    </ul>
+
+  </nav>
+  <!-- /.navbar -->
     <div  class="page-wrapper chiller-theme toggled">
   <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
     <i class="fas fa-bars"></i>
@@ -71,7 +210,9 @@
                         </div>
                     </div>
                 </div>
+
                 <br>
+
                 <div class="col-sm">
                     <div class="card">
                         <div class="card-body">
@@ -81,15 +222,17 @@
                 </div>
             </div>
             <br>
+{#            <div class="row">#}
+{#                <div class="col-sm">#}
+{#                    <div class="card">#}
+{#                        <div class="card-body">#}
+{#                            <iframe height="600" style="border:none;" width="900" src="http://localhost:8000/sale-of-cigarettes-in-europe/" allowfullscreen></iframe>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#                <br>#}
             <div class="row">
-                <div class="col-sm">
-                    <div class="card">
-                        <div class="card-body">
-                            <iframe height="600" style="border:none;" width="900" src="http://localhost:8000/sale-of-cigarettes-in-europe/" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-                <br>
                 <div class="col-sm">
                     <div class="card">
                         <div class="card-body">
@@ -97,9 +240,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
             <br>
-            <div class="row">
+
                 <div class="col-sm">
                     <div class="card">
                         <div class="card-body">
@@ -107,7 +250,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
                 <br>
+            <div class="row">
                 <div class="col-sm">
                     <div class="card">
                         <div class="card-body">
@@ -115,9 +260,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
             <br>
-            <div class="row">
+
                 <div class="col-sm">
                     <div class="card">
                         <div class="card-body">
@@ -125,7 +270,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
                 <br>
+            <div class="row">
                 <div class="col-sm">
                     <div class="card">
                         <div class="card-body">
@@ -133,9 +280,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
             <br>
-            <div class="row">
+
                 <div class="col-sm">
                     <div class="card">
                         <div class="card-body">
@@ -143,25 +290,29 @@
                         </div>
                     </div>
                 </div>
-                <br>
-                <div class="col-sm">
-                    <div class="card">
-                        <div class="card-body">
-                            <iframe height="600" style="border:none;" width="900" src="http://localhost:8000/rendering-map-using-json-example/" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <br>
+                <br>
             <div class="row">
                 <div class="col-sm">
                     <div class="card">
                         <div class="card-body">
-                            <iframe height="600" style="border:none;" width="900" src="http://localhost:8000/chord-with-large-number-of-nodes/" allowfullscreen></iframe>
+                            <iframe height="700" style="border:none;" width="1000" src="http://localhost:8000/rendering-map-using-json-example/" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
+
+            <br>
+
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body">
+                            <iframe height="700" style="border:none;" width="1000" src="http://localhost:8000/chord-with-large-number-of-nodes/" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
                 <br>
+            <div class="row">
                 <div class="col-sm">
                     <div class="card">
                         <div class="card-body">
@@ -169,9 +320,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
             <br>
-            <div class="row">
+
                 <div class="col-sm">
                     <div class="card">
                         <div class="card-body">
@@ -179,7 +330,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
                 <br>
+            <div class="row">
                 <div class="col-sm">
                     <div class="card">
                         <div class="card-body">
@@ -187,9 +340,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
             <br>
-            <div class="row">
+
                 <div class="col-sm">
                     <div class="card">
                         <div class="card-body">
@@ -197,7 +350,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
                 <br>
+            <div class="row">
                 <div class="col-sm">
                     <div class="card">
                         <div class="card-body">
@@ -205,9 +360,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
             <br>
-            <div class="row">
+
                 <div class="col-sm">
                     <div class="card">
                         <div class="card-body">
@@ -215,7 +370,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
                 <br>
+            <div class="row">
                 <div class="col-sm">
                     <div class="card">
                         <div class="card-body">
@@ -223,9 +380,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
             <br>
-            <div class="row">
+
                 <div class="col-sm">
                     <div class="card">
                         <div class="card-body">
@@ -233,7 +390,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
                 <br>
+            <div class="row">
                 <div class="col-sm">
                     <div class="card">
                         <div class="card-body">
@@ -241,9 +400,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
             <br>
-            <div class="row">
+
                 <div class="col-sm">
                     <div class="card">
                         <div class="card-body">
@@ -251,15 +410,17 @@
                         </div>
                     </div>
                 </div>
-                <br>
-                <div class="col-sm">
-                    <div class="card">
-                        <div class="card-body">
-                            <iframe height="600" style="border:none;" width="900" src="http://localhost:8000/Annotating-single-data-point/" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
             </div>
+                <br>
+{#            <div class="row">#}
+{#                <div class="col-sm">#}
+{#                    <div class="card">#}
+{#                        <div class="card-body">#}
+{#                            <iframe height="600" style="border:none;" width="900" src="http://localhost:8000/Annotating-single-data-point/" allowfullscreen></iframe>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
         </div>
   </main>
   <!-- page-content" -->
@@ -328,6 +489,7 @@
     </div>
   </div>
 </div>
+  </div>
   </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -342,7 +504,7 @@
     }
 #app{
   font-family: Poppins;
-  sans-serif;
+
 }
 .container-login{
   background-image: linear-gradient(-189deg, rgb(6, 35, 108) 1%, rgb(20, 73, 198) 95%);
@@ -847,6 +1009,66 @@ body {
 .owner{
     color:black;
 }
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.dropbtn {
+  background-color: #5C63FD;
+  color: white;
+  padding: 12px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #17194B;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 300px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
 </style>
 
 <script>
@@ -882,5 +1104,16 @@ $(".page-wrapper").addClass("toggled");
 });
 
 });
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
 </script>
 </html>

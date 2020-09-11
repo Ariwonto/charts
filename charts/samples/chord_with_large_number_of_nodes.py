@@ -7,7 +7,7 @@ from django.views.decorators.clickjacking import xframe_options_exempt
 @xframe_options_exempt
 
 def chart(request):
-   chartObj = FusionCharts( 'chord', 'ex1', '600', '400', 'chart-1', 'json', """{
+   chartObj = FusionCharts( 'chord', 'ex1', '600', '600', 'chart-1', 'json', """{
   "chart": {
     "caption": "Fouls in FIFA, 2018",
     "subcaption": "Exchange of fouls between different playing nations; Color of the link showing the winner in the fouls-battle",
