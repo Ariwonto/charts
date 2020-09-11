@@ -15,7 +15,7 @@ SECRET_KEY = '+7_(av2h$i+o2ter5^fswp6oeya5-5m=-^@m27yx)zbb6p-z2w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
@@ -47,6 +47,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # External
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'graficos.urls'

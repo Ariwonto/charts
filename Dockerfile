@@ -34,4 +34,4 @@ WORKDIR /app
 # ENTRYPOINT ["/app/docker-entrypoint.sh"]
 
 
-CMD gunicorn -b :8000 Main.wsgi
+CMD gunicorn -b :8000 graficos.wsgi
