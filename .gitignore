@@ -4,7 +4,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+__pycache__/*
 # C extensions
 *.so
 
@@ -148,3 +148,4 @@ cython_debug/
 .idea/misc.xml
 .idea/modules.xml
 .idea/vcs.xml
+charts/.idea/
