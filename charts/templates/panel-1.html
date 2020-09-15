@@ -68,7 +68,7 @@
                     </div>
                 </div>
             </form>
-                        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
             <div class="dropdown">
                 <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Flters</a>
             </div>
@@ -169,6 +169,14 @@
                          alt="User Image">
                 </div>
             </li>
+            <li>
+                <div class="image">
+                    <a href="/logout"> &nbsp; <img style="height:30px; width:30px" src="{% static 'logout.png' %}"
+                                                   class="img-circle"
+                                                   alt="User Image"></a>
+                </div>
+
+            </li>
         </ul>
 
     </nav>
@@ -214,6 +222,9 @@
                         <li>
                             <a class="nav-link" href="/expenses-and -payment-methods">Expenses and Payment Methods</a>
                         </li>
+                        <li>
+                            <a class="nav-link" href="/digitaltwin">Digital Twin</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -229,8 +240,9 @@
                         <div class="card-body">
                             <div class="contenedor">
                                 <button class="botonF1" data-toggle="modal" data-target="#displays-bar">
-                                    <span><img style="height:34px; width:34px" src="{% static '22-512n.png' %}" class="img-responsive"
-                                         alt="User Image"></span></button>
+                                    <span><img style="height:34px; width:34px" src="{% static '22-512n.png' %}"
+                                               class="img-responsive"
+                                               alt="User Image"></span></button>
                                 </button>
                             </div>
                             <iframe height="450" style="border:none;" width="900"
@@ -244,7 +256,8 @@
                         <div class="card-body">
                             <div class="contenedor">
                                 <button class="botonF1" data-toggle="modal" data-target="#spline-data">
-                                    <span><img style="height:34px; width:34px" src="{% static '22-512n.png' %}" class="img-responsive" alt="User Image"></span></button>
+                                    <span><img style="height:34px; width:34px" src="{% static '22-512n.png' %}"
+                                               class="img-responsive" alt="User Image"></span></button>
                                 </button>
                             </div>
                             <iframe height="450" style="border:none;" width="900"
@@ -260,7 +273,8 @@
                         <div class="card-body">
                             <div class="contenedor">
                                 <button class="botonF1" data-toggle="modal" data-target="#social-network">
-                                    <span><img style="height:34px; width:34px" src="{% static '22-512n.png' %}" class="img-responsive" alt="User Image"></span></button>
+                                    <span><img style="height:34px; width:34px" src="{% static '22-512n.png' %}"
+                                               class="img-responsive" alt="User Image"></span></button>
                                 </button>
                             </div>
                             <iframe height="450" style="border:none;" width="900"
@@ -274,7 +288,8 @@
                         <div class="card-body">
                             <div class="contenedor">
                                 <button class="botonF1" data-toggle="modal" data-target="#audience-location">
-                                    <span><img style="height:34px; width:34px" src="{% static '22-512n.png' %}" class="img-responsive" alt="User Image"></span></button>
+                                    <span><img style="height:34px; width:34px" src="{% static '22-512n.png' %}"
+                                               class="img-responsive" alt="User Image"></span></button>
                                 </button>
                             </div>
                             <iframe height="450" style="border:none;" width="900"
@@ -290,7 +305,8 @@
                         <div class="card-body">
                             <div class="contenedor">
                                 <button class="botonF1" data-toggle="modal" data-target="#heat-map-most-redeem">
-                                    <span><img style="height:34px; width:34px" src="{% static '22-512n.png' %}" class="img-responsive" alt="User Image"></span></button>
+                                    <span><img style="height:34px; width:34px" src="{% static '22-512n.png' %}"
+                                               class="img-responsive" alt="User Image"></span></button>
                                 </button>
                             </div>
                             <iframe height="450" style="border:none;" width="900"
@@ -302,9 +318,10 @@
                 <div class="col-sm">
                     <div class="card">
                         <div class="card-body">
-                                <button class="botonF1" data-toggle="modal" data-target="#bar-chart-custom-labels">
-                                    <span><img style="height:34px; width:34px" src="{% static '22-512n.png' %}" class="img-responsive" alt="User Image"></span></button>
-                                </button>
+                            <button class="botonF1" data-toggle="modal" data-target="#bar-chart-custom-labels">
+                                <span><img style="height:34px; width:34px" src="{% static '22-512n.png' %}"
+                                           class="img-responsive" alt="User Image"></span></button>
+                            </button>
                             <iframe height="450" style="border:none;" width="900"
                                     src="http://localhost:8000/radar/" allowfullscreen></iframe>
                         </div>
@@ -384,129 +401,149 @@
 </div>
 
 <!-- Modal 1-->
-<div class="modal fade" id="displays-bar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Chapii your virtual assistant says:</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Your potential customers keep coming from the Topii APP, 60% of them are Android users, 39% IOS users, and only 1% is unknown
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+<div class="modal fade" id="displays-bar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Chapii your virtual assistant says:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Your potential customers keep coming from the Topii APP, 60% of them are Android users, 39% IOS users,
+                and only 1% is unknown
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <!-- Modal 2-->
-<div class="modal fade" id="spline-data" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Chapii your virtual assistant says:</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        On average 90% of your viewed promotions are saved for real redemption intent, you are on the right track, continue segmented like the gods
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+<div class="modal fade" id="spline-data" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Chapii your virtual assistant says:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                On average 90% of your viewed promotions are saved for real redemption intent, you are on the right
+                track, continue segmented like the gods
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <!-- Modal 3-->
-<div class="modal fade" id="social-network" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Chapii your virtual assistant says:</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        In the last 4 months, your tendency to share promotions from TOPii to a social network leaned towards Instagram, but Twitter has had an increase of 2600% but 0 users have entered your promos through that channel. boost your promotions on Facebook more than 5300 users await your fabulous promotions.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+<div class="modal fade" id="social-network" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Chapii your virtual assistant says:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                In the last 4 months, your tendency to share promotions from TOPii to a social network leaned towards
+                Instagram, but Twitter has had an increase of 2600% but 0 users have entered your promos through that
+                channel. boost your promotions on Facebook more than 5300 users await your fabulous promotions.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <!-- Modal 4-->
-<div class="modal fade" id="audience-location" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Chapii your virtual assistant says:</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Pepperoni love your pizza crust.  most young people between the ages of 25 and 32 They exchange you for the Lovers of Pepperonis promotion, the promotion of the following Pizza 1Euro with people between 35 and 42 years old began its second day with 602 exchanges, on Monday of happiness they attract people from 20 to 65 years with a growth of 200% in only 2 weeks.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+<div class="modal fade" id="audience-location" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Chapii your virtual assistant says:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Pepperoni love your pizza crust. most young people between the ages of 25 and 32 They exchange you for
+                the Lovers of Pepperonis promotion, the promotion of the following Pizza 1Euro with people between 35
+                and 42 years old began its second day with 602 exchanges, on Monday of happiness they attract people
+                from 20 to 65 years with a growth of 200% in only 2 weeks.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <!-- Modal 5-->
-<div class="modal fade" id="heat-map-most-redeem" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Chapii your virtual assistant says:</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Without a doubt, Wednesdays are your best day, between 16:00. to 19:00  the average number of TOPii users who visit you is 73 people per hour, followed by Thursday at 12, the time with the highest influx of users is 19:00 with an average of 72 visitors. your Thursday days have a lower influx. dare to make an exclusive promotion for Thursdays with my autopilot
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+<div class="modal fade" id="heat-map-most-redeem" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Chapii your virtual assistant says:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Without a doubt, Wednesdays are your best day, between 16:00. to 19:00 the average number of TOPii users
+                who visit you is 73 people per hour, followed by Thursday at 12, the time with the highest influx of
+                users is 19:00 with an average of 72 visitors. your Thursday days have a lower influx. dare to make an
+                exclusive promotion for Thursdays with my autopilot
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <!-- Modal 6-->
-<div class="modal fade" id="bar-chart-custom-labels" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Chapii your virtual assistant says:</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Your products have a high consumer demand and consumers love Pizzas and the volume of exchanges made at Pepitos Pizza is balancing with respect to the demand for your products and the trend towards redemption, however the percentage of views made of your promotions is very low with respect to the number of visits generated to your promotions, you must improve the quality of the images of your promotions and make more attractive titles for your promotions.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+<div class="modal fade" id="bar-chart-custom-labels" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Chapii your virtual assistant says:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Your products have a high consumer demand and consumers love Pizzas and the volume of exchanges made at
+                Pepitos Pizza is balancing with respect to the demand for your products and the trend towards
+                redemption, however the percentage of views made of your promotions is very low with respect to the
+                number of visits generated to your promotions, you must improve the quality of the images of your
+                promotions and make more attractive titles for your promotions.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 
@@ -1122,7 +1159,7 @@
     }
 
     .esconder {
-        display:none;
+        display: none;
     }
 
     .contenedor {
@@ -1228,22 +1265,23 @@
     });
 
 
-function myFunction() {
+    function myFunction() {
 
-  document.getElementById("myDropdown").classList.toggle("show");
-  document.getElementById("myDropdown2").classList.remove("show");
-
-
-}
-function myFunction2() {
-  //document.getElementById("myDropdown2").style.display="block";
-  document.getElementById("myDropdown2").classList.toggle("show");
-  document.getElementById("myDropdown").classList.remove("show");
+        document.getElementById("myDropdown").classList.toggle("show");
+        document.getElementById("myDropdown2").classList.remove("show");
 
 
-}
+    }
 
-// Close the dropdown if the user clicks outside of it
+    function myFunction2() {
+        //document.getElementById("myDropdown2").style.display="block";
+        document.getElementById("myDropdown2").classList.toggle("show");
+        document.getElementById("myDropdown").classList.remove("show");
+
+
+    }
+
+    // Close the dropdown if the user clicks outside of it
 
 
     $('.botonF1').click(function () {

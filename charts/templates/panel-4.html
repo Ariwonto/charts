@@ -59,7 +59,7 @@
             </div>
                         &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
             <div class="dropdown">
-                <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Avance Filters</a>
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#avance">Avance Filters</a>
             </div>
     </ul>
 
@@ -156,6 +156,13 @@
               <img  style="height:34px; width:34px" src="{% static 'Perfil.jpg' %}"  class="img-circle" alt="User Image">
             </div>
         </li>
+            <li >
+                <div class="image">
+                    <a href="/logout" > &nbsp; <img style="height:30px; width:30px" src="{% static 'logout.png' %}" class="img-circle"
+                         alt="User Image"></a>
+                </div>
+
+            </li>
     </ul>
 
   </nav>
@@ -198,8 +205,10 @@
           <li>
             <a class="nav-link" href="/expenses-and -payment-methods">Expenses and Payment Methods</a>
           </li>
+            <li>    <a class="nav-link" href="/digitaltwin">Digital Twin</a>
+            </li>
             <li>
-            <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Configure</a>
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#configuracion">Configure</a>
           </li>
         </ul>
       </div>
@@ -1040,6 +1049,232 @@
     </div>
   </div>
 </div>
+
+
+<div class="modal" id="configuracion" >
+    <div class="modal-dialog">
+        <div class="modal-content" style="width:320px ;height:420px">
+            <div class="modal-header">
+                <h4 class="modal-title">Configure</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="container"></div>
+            <div class="modal-body">
+                <table >
+                    <tr>
+                        <th><a data-toggle="modal" href="#myModal2" class="btn btn-primary">Dynamics AX 2012 R2</a></th>
+                        <th><a data-toggle="modal" href="#myModal2" class="btn btn-primary">Dynamics AX 2012 R3</a></th>
+                        <th><a data-toggle="modal" href="#myModal2" class="btn btn-primary">Dynamics 365</a></th>
+                    </tr>
+                    <tr>
+                        <th><a data-toggle="modal" href="#myModal2" class="btn btn-primary">Dynamics CRM</a></th>
+                        <th><a data-toggle="modal" href="#myModal2" class="btn btn-primary">SAP HANA Enterprise Edition</a></th>
+                        <th><a data-toggle="modal" href="#myModal2" class="btn btn-primary">SAP SRM versión 7.0</a></th>
+                    </tr>
+                    <tr>
+                        <th><a data-toggle="modal" href="#myModal2" class="btn btn-primary">Sales Force CRM</a></th>
+                        <th><a data-toggle="modal" href="#myModal2" class="btn btn-primary">SAP Netweaver 7.3</a></th>
+                        <th><a data-toggle="modal" href="#myModal2" class="btn btn-primary">Zoho CRM</a></th>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="modal-footer">
+                <a href="#" data-dismiss="modal" class="btn">Close</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <h4 class="modal-title">Configure</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="container">
+                    <div class="modal-body">
+                                               <table class="table">
+                            <tr>
+                                <th><label> Select Data Base </label></th>
+                                <th>
+                                    <select class="custom-select">
+                                        <option>MySql</option>
+                                        <option>AWS</option>
+                                        <option>Grakn</option>
+                                        <option>Oracle</option>
+                                        <option>SQLServer</option>
+                                    </select>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th><label for="fname">URL:</label></th>
+                                <th><input type="text" id="fname" name="fname"></th>
+
+                            </tr>
+
+                           <tr>
+                                <th> <label for="lname">User Name:</label></th>
+                                <th><input type="text" id="lname" name="lname"></th>
+
+                           </tr>
+                           <tr>
+                                <th> <label for="lname"> Password:</label></th>
+                                <th> <input type="password" id="password" name="password"></th>
+
+                            </tr>
+                           <tr>
+                                <th>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch11" checked>
+                                        <label class="custom-control-label" for="customSwitch11">Inventory Module</label>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch12" checked>
+                                        <label class="custom-control-label" for="customSwitch12">Shopping module</label>
+                                    </div>
+                                </th>
+
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch13" checked>
+                                        <label class="custom-control-label" for="customSwitch13">Sales module</label>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch14" checked>
+                                        <label class="custom-control-label" for="customSwitch14">Financial and Accounting Module</label>
+                                    </div>
+                                </th>
+
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch15" checked>
+                                        <label class="custom-control-label" for="customSwitch15">CRM module</label>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch16" checked>
+                                        <label class="custom-control-label" for="customSwitch16">Supply Chain Management</label>
+                                    </div>
+                                </th>
+
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch17" checked>
+                                        <label class="custom-control-label" for="customSwitch17">Production Module</label>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch18" checked>
+                                        <label class="custom-control-label" for="customSwitch18">Retail Module</label>
+                                    </div>
+                                </th>
+
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" data-dismiss="modal" class="btn">Close</a>
+                    <a href="#" class="btn btn-primary">Save changes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="modal fade" id="avance" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Avance Filters</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                     <table class="table">
+                           <tr>
+                                <th>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                                        <label class="custom-control-label" for="customSwitch1">Financial Model</label>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch2" checked>
+                                        <label class="custom-control-label" for="customSwitch2">Predictive Model</label>
+                                    </div>
+                                </th>
+
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch3" checked>
+                                        <label class="custom-control-label" for="customSwitch3">Accounting Flow</label>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch4" checked>
+                                        <label class="custom-control-label" for="customSwitch4">ERP/CRM Campaigns</label>
+                                    </div>
+                                </th>
+
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch5" checked>
+                                        <label class="custom-control-label" for="customSwitch5">Inventory Flow</label>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch6" checked>
+                                        <label class="custom-control-label" for="customSwitch6">Product Catalog</label>
+                                    </div>
+                                </th>
+
+                            </tr>
+                        </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn">Apply Filter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
   </body>
 <scrifpt src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></scrifpt>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -1792,7 +2027,9 @@ $(".page-wrapper").addClass("toggled");
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
+
 function myFunction() {
+
   document.getElementById("myDropdown").classList.toggle("show");
   document.getElementById("myDropdown2").classList.remove("show");
 }
@@ -1808,6 +2045,13 @@ function myFunction2() {
         $('.btn1').removeClass('animacionVer');
     })
 
+
+    $('.botonF1').click(function () {
+        $('.btn1').addClass('animacionVer');
+    })
+    $('.contenedor').mouseleave(function () {
+        $('.btn1').removeClass('animacionVer');
+    })
 
 </script>
 </html>

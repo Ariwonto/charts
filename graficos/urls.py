@@ -17,7 +17,7 @@ from django.conf.urls import url
 from django.contrib import admin
 
 from charts.views import catalogue
-from charts.views import panel, panel2, test, panel3, panel4, panel5
+from charts.views import panel, panel2, test, panel3, panel4, panel5,login,logout,panel6
 from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import re_path
@@ -70,14 +70,18 @@ from charts.samples import line_with_multiple_series
 from charts.samples import images_bar
 from charts.samples import burbujas
 from charts.samples import radar
+
 urlpatterns = [
-    url(r'^$', panel),
+    url(r'^$', login, name='login'),
+    url(r'^index/', panel, name='index'),
+    url(r'^logout/', logout, name='logout'),
     url(r'^test/', test),
     url(r'^demographic-and-hourly-segmentation/', panel),
     url(r'^geolocation-and-retention-analytics/', panel2),
     url(r'^consumtions-habits-by-categories/', panel3),
     url(r'^product-trends-and-preferences/', panel4),
     url(r'^expenses-and -payment-methods/', panel5),
+    url(r'^digitaltwin/', panel6),
 
     url(r'^admin/', admin.site.urls),
     url(r'^datahandler', datahandler.getdata),
@@ -159,5 +163,7 @@ urlpatterns = [
     url(r'^images-bar', images_bar.chart, name='chart'),
     url(r'^burbujas', burbujas.chart, name='chart'),
     url(r'^radar', radar.chart, name='chart'),
+
+
 
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
