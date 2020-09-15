@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,12 +14,12 @@
 
 <body>
     <div id="login">
-        <h3 class="text-center text-white pt-5">Login form</h3>
+        <h1 class="text-center text-white pt-5">Customer Journey Analytics (CJA)</h1> <br>  <br>
+        <center> <img src="{% static 'topii.png' %}" width="485" height="144" >
         <div class="container">
             <div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-6">
                     <div id="login-box" class="col-md-12">
-
                         <form id="login-form" class="form" enctype="multipart/form-data" method="post">  {% csrf_token %}
                             <h3 class="text-center text-info">Login</h3>
                             <div class="form-group">
@@ -49,7 +50,7 @@
     body {
   margin: 0;
   padding: 0;
-  background-color: #17a2b8;
+  background-color: #767DFF;
   height: 100vh;
 }
 #login .container #login-row #login-column #login-box {
